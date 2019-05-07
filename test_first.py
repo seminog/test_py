@@ -9,8 +9,8 @@ from selenium import webdriver
 @allure.story('Яндекс')
 def test_open_ya():
     with allure.step('Шаг 1'):
-        # wd = webdriver.Chrome()
-        wd = webdriver.Firefox()
+        wd = webdriver.Chrome()
+
     with allure.step('Шаг 2'):
         wd.get('http://yandex.ru')
     with allure.step('Шаг 3'):
